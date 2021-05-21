@@ -3,6 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\ProductInvoice;
+use App\Models\ProductImage;
+use App\Models\ProductComment;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +16,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        ProductImage::factory(30)->create();
+        ProductComment::factory(30)->create();
+        ProductInvoice::factory(30)->create();
     }
 }
