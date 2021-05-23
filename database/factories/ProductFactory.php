@@ -29,6 +29,7 @@ class ProductFactory extends Factory
             'product_sale_date_start' => $this->faker->dateTimeBetween('now', '+1 year'),
             'product_sale_date_end' => $this->faker->dateTimeBetween('now', '+2 year'),
             'cost' => $this->faker->randomFloat(2, 1, 5000),
+            'category' => $this->faker->word(),
             'quantity' => $this->faker->numberBetween(0, 10000)
         ];
     }

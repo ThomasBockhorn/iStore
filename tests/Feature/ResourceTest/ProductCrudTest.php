@@ -21,6 +21,7 @@ class ProductCrudTest extends TestCase
         'product_sale_date_start' => '2021-05-07',
         'product_sale_date_end' => '2021-06-07',
         'quantity' => 5,
+        'category' => 'category',
         'cost' => 12.34
     ];
 
@@ -34,6 +35,7 @@ class ProductCrudTest extends TestCase
         'product_sale_date_start' => '2021-05-07',
         'product_sale_date_end' => '2021-06-07',
         'quantity' => 5,
+        'category' => 'nCategory',
         'cost' => 12.34
     ];
 

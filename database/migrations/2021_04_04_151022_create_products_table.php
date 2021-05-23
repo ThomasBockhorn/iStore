@@ -23,6 +23,7 @@ class CreateProductsTable extends Migration
             $table->date('product_sale_date_end')->nullable();
             $table->integer('quantity');
             $table->float('cost', 8, 2);
+            $table->string('category');
             $table->timestamps();
         });
     }

@@ -31,6 +31,7 @@ class ProductRequest extends FormRequest
             'product_sale_date_start' => 'date',
             'product_sale_date_end' => 'date',
             'quantity' => 'required|integer|numeric',
+            'category' => 'required|string',
             'cost' => 'required|numeric'
         ];
     }
@@ -48,6 +49,7 @@ class ProductRequest extends FormRequest
             'product_price' => filter_var($this->product_price, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION),
             'product_sale_price' => filter_var($this->product_sale_price, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION),
             'quantity' => filter_var($this->quantity, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION),
+            'category' => filter_var($this->category, FILTER_SANITIZE_STRING),
             'cost' => filter_var($this->cost, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION),
         ]);
     }
