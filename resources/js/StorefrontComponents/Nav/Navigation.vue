@@ -33,4 +33,7 @@ export default {};
 </script>
 
 <style>
+nav {
+  z-index: 10;
+}
 </style>
