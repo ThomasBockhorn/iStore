@@ -23265,11 +23265,16 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-8a6433c8");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("video", {
+var _hoisted_1 = {
+  "class": "flex"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("video", {
   controls: "",
   autoplay: "",
   muted: "",
-  loop: ""
+  loop: "",
+  "class": "flex-auto"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("source", {
   src: "/mov/Bookcase.mp4",
   type: "video/mp4"
@@ -23277,8 +23282,8 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "title w-100"
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "title flex-auto"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
   "class": "text-center"
 }, "Shakespeare's Bookstore")], -1
@@ -23288,7 +23293,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("header", null, [_hoisted_1, _hoisted_2]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("header", _hoisted_1, [_hoisted_2, _hoisted_3]);
 });
 
 /***/ }),
@@ -23312,15 +23317,61 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-2e7277ba");
 
 var _hoisted_1 = {
-  "class": "mt-8"
+  "class": "mt-8 p-5"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"grid sm:grid-cols-3 place-items-center grid-row-auto\" id=\"top-navigation\" data-v-2e7277ba><form class id=\"search\" action data-v-2e7277ba><input class=\"focus:border-blue-500\" type=\"text\" name=\"search\" id=\"search\" data-v-2e7277ba><button class=\"border border-blue-500 rounded-md ml-2 p-2 font-bold hover:bg-blue-500 hover:text-white\" type=\"submit\" data-v-2e7277ba>Submit</button></form><div id=\"title\" data-v-2e7277ba>Title</div><div id=\"navigation\" data-v-2e7277ba><ul class=\"grid sm:grid-cols-3 place-items-center\" data-v-2e7277ba><li data-v-2e7277ba>About Us</li><li data-v-2e7277ba>News</li><li data-v-2e7277ba>Wishlist</li><li data-v-2e7277ba>Shop</li></ul></div></div><div class=\"grid sm:grid-cols-2 place-items-center\" id=\"categories\" data-v-2e7277ba><ul data-v-2e7277ba><li data-v-2e7277ba>Categories</li></ul><div id=\"cart\" data-v-2e7277ba>Shopping cart image</div></div>", 2);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "grid sm:grid-cols-2 place-content-center",
+  id: "top-navigation"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", {
+  "class": "grid-col-2",
+  id: "search",
+  action: ""
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  "class": "focus:border-blue-500",
+  type: "text",
+  name: "search",
+  id: "search"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+  "class": "border border-blue-500 rounded-md ml-2 p-2 font-bold hover:bg-blue-500 hover:text-white text-white",
+  type: "submit"
+}, "Submit")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  id: "title-nav",
+  "class": "grid sm:grid-cols-2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  id: "title",
+  "class": "text-white mt-2 pt-2 text-2xl"
+}, "Shakespeare's Bookstore"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+  "class": "inline-block md:hidden w-8 h-8 bg-transparent text-white p-1"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  fill: "currentColor",
+  viewBox: "0 0 20 20",
+  xmlns: "http://www.w3.org/2000/svg"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  "fill-rule": "evenodd",
+  d: "M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z",
+  "clip-rule": "evenodd"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("nav", {
+  "class": "absolute md:relative top-16 left-0 md:top-0 z-20"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
+  "class": "flex flex-col md:flex-row md:space-x-6 md:text-white mt-2 pt-2 md:w-auto bg-gray-100 md:bg-transparent text-black md:p-0"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, "About Us"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, "News"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, "Wishlist"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, "Shop")])])])], -1
+/* HOISTED */
+);
+
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "grid sm:grid-cols-2 place-items-center",
+  id: "categories"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, "Categories")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  id: "cart"
+}, "Shopping cart image")], -1
+/* HOISTED */
+);
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("nav", _hoisted_1, [_hoisted_2]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2, _hoisted_3]);
 });
 
 /***/ }),
@@ -23519,7 +23570,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nvideo[data-v-8a6433c8] {\n  position: fixed;\n  right: 0;\n  bottom: 0;\n  min-width: 100%;\n  min-height: 100%;\n  z-index: -10;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.title[data-v-8a6433c8] {\n  position: fixed;\n  left: 50%;\n  top: 50%;\n  background: rgba(0, 0, 0, 0.5);\n  color: #f1f1f1;\n}\nheader[data-v-8a6433c8] {\n  width: 100%;\n  height: 50%;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nvideo[data-v-8a6433c8] {\n  position: fixed;\n  right: 0;\n  bottom: 0;\n  /**min-width: 100%;\n  min-height: 100%;**/\n  width: 100%;\n  height: 100%;\n  z-index: -10;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.title[data-v-8a6433c8] {\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  background: rgba(0, 0, 0, 0.5);\n  color: #f1f1f1;\n}\nheader[data-v-8a6433c8] {\n  top: 0;\n  left: 0;\n  width: 100vh;\n  height: 100vh;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
