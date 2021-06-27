@@ -23,13 +23,18 @@ use App\Http\Controllers\CrudControllers\ProductInvoiceController;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Storefront/index', [
+/*Route::get('/', function () {
+    return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
-        //'laravelVersion' => Application::VERSION,
-        //'phpVersion' => PHP_VERSION,
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
     ]);
+});
+*/
+
+Route::get('/', function () {
+    return Inertia::render('Storefront/Index');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

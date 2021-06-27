@@ -1,22 +1,16 @@
 <template>
-  <div>
-    <Head></Head>
-    <h1>Test</h1>
-  </div>
+    <div>
+        <MainNavbar></MainNavbar>
+    </div>
 </template>
 
-
 <script>
-import StorefrontLayout from "@/Layouts/StorefrontLayout";
-import Head from "@/StorefrontComponents/Head/Head";
-
+import MainNavbar from "@/StorefrontComponents/NavbarComponents/MainNavbar/MainNavbar.vue";
 export default {
-  layout: StorefrontLayout,
-  components: {
-    Head
-  }
+    components: {
+        MainNavbar,
+    },
 };
 </script>
 
-<style>
-</style>
+<style></style>
