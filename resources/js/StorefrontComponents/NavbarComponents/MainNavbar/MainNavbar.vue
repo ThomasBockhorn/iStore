@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex items-center justify-between bg-transparent flex-wrap p-6">
+    <nav class="flex items-center justify-between bg-white flex-wrap p-6">
         <div class="flex items-center flex-no-shrink text-black mr-6">
             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <g
@@ -32,6 +32,7 @@
         </div>
         <div class="block sm:hidden">
             <button
+                @click="toggle"
                 class="flex items-center h-10 w-10 text-black border-black hover:text-grey"
             >
                 <svg
@@ -94,7 +95,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data: () => {
+        return {
+            open: false,
+        };
+    },
+    methods: {
+        toggle() {
+            this.open = !this.open;
+        },
+    },
+};
 </script>
 
 <style></style>

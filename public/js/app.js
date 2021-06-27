@@ -18472,7 +18472,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      open: false
+    };
+  },
+  methods: {
+    toggle: function toggle() {
+      this.open = !this.open;
+    }
+  }
+});
 
 /***/ }),
 
@@ -23196,7 +23207,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "flex items-center justify-between bg-transparent flex-wrap p-6"
+  "class": "flex items-center justify-between bg-white flex-wrap p-6"
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
@@ -23227,11 +23238,11 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_3 = {
   "class": "block sm:hidden"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
-  "class": "flex items-center h-10 w-10 text-black border-black hover:text-grey"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+};
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
   "class": "fill-current h-full w-full",
   "enable-background": "new 0 0 32 32",
   viewBox: "0 0 32 32",
@@ -23253,16 +23264,21 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   d: "m10 12h12"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
   d: "m10 20h12"
-})])])])], -1
+})])], -1
 /* HOISTED */
 );
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tex-sm sm:flex-grow\"><a href=\"#responsive-header\" class=\"no-underline block mt-4 sm:inline-block sm:mt-0 text-black hover:text-grey mr-4\">Link 1</a><a href=\"#responsive-header\" class=\"no-underline block mt-4 sm:inline-block sm:mt-0 text-black hover:text-grey mr-4\">Link 2</a><a href=\"#responsive-header\" class=\"no-underline block mt-4 sm:inline-block sm:mt-0 text-black hover:text-grey mr-4\">Link 3</a></div><div><a href=\"#\" class=\"no-underline inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-blue hover:text-blue hover:bg-white mt-4 sm:mt-0\">Contact Us</a></div>", 2);
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tex-sm sm:flex-grow\"><a href=\"#responsive-header\" class=\"no-underline block mt-4 sm:inline-block sm:mt-0 text-black hover:text-grey mr-4\">Link 1</a><a href=\"#responsive-header\" class=\"no-underline block mt-4 sm:inline-block sm:mt-0 text-black hover:text-grey mr-4\">Link 2</a><a href=\"#responsive-header\" class=\"no-underline block mt-4 sm:inline-block sm:mt-0 text-black hover:text-grey mr-4\">Link 3</a></div><div><a href=\"#\" class=\"no-underline inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-blue hover:text-blue hover:bg-white mt-4 sm:mt-0\">Contact Us</a></div>", 2);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("nav", _hoisted_1, [_hoisted_2, _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("nav", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+    onClick: _cache[1] || (_cache[1] = function () {
+      return $options.toggle && $options.toggle.apply($options, arguments);
+    }),
+    "class": "flex items-center h-10 w-10 text-black border-black hover:text-grey"
+  }, [_hoisted_4])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
     "class": [_ctx.open ? 'block' : 'hidden', "w-full flex-grow sm:flex sm:items-center sm:w-auto"]
-  }, [_hoisted_4], 2
+  }, [_hoisted_5], 2
   /* CLASS */
   )]);
 }
