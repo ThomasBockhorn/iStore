@@ -23233,7 +23233,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
   d: "m49.5757576 11.6938381c0-5.34418156-4.3373598-9.6938381-9.6877642-9.6938381h-29.1001146v77.5757576h29.0927758c5.3544575 0 9.695103 4.3340596 9.695103 9.7031974v1.4514316z"
 })])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
-  "class": "font-semibold text-xl trackting-tight"
+  "class": "font-semibold text-xl tracking-tight"
 }, "Shakespeare's Books")], -1
 /* HOISTED */
 );

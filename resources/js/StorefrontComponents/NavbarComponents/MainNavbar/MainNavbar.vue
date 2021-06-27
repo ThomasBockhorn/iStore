@@ -26,7 +26,7 @@
                     />
                 </g>
             </svg>
-            <span class="font-semibold text-xl trackting-tight"
+            <span class="font-semibold text-xl tracking-tight"
                 >Shakespeare's Books</span
             >
         </div>
