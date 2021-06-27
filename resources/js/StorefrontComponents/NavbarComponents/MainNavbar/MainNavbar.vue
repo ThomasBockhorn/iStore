@@ -70,25 +70,41 @@
                 <a
                     href="#responsive-header"
                     class="no-underline block mt-4 sm:inline-block sm:mt-0 text-black hover:text-grey mr-4"
-                    >Link 1</a
+                    >Category 1</a
                 >
                 <a
                     href="#responsive-header"
                     class="no-underline block mt-4 sm:inline-block sm:mt-0 text-black hover:text-grey mr-4"
-                    >Link 2</a
+                    >Category 2</a
                 >
                 <a
                     href="#responsive-header"
                     class="no-underline block mt-4 sm:inline-block sm:mt-0 text-black hover:text-grey mr-4"
-                    >Link 3</a
+                    >Category 3</a
                 >
             </div>
             <div>
                 <a
                     href="#"
-                    class="no-underline inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-blue hover:text-blue hover:bg-white mt-4 sm:mt-0"
-                    >Contact Us</a
+                    class="flex items-center h-10 w-10 text-black border-black hover:text-grey"
                 >
+                    <svg
+                        enable-background="new 0 0 100 100"
+                        height="100"
+                        viewBox="0 0 100 100"
+                        width="100"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="m30 36.667-3.333-20h-16.667v6.666h11.019l8.891 53.334h53.389l6.702-40z"
+                        />
+                        <circle cx="43.333" cy="85" r="5" />
+                        <circle cx="70" cy="85" r="5" />
+                        <path
+                            d="m76.667 10v6.667h-6.667v6.666h6.667v6.667h6.666v-6.667h6.667v-6.666h-6.667v-6.667z"
+                        />
+                    </svg>
+                </a>
             </div>
         </div>
     </nav>
