@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex items-center justify-between flex-wrap p-6">
+    <nav class="flex items-center justify-between bg-transparent flex-wrap p-6">
         <div class="flex items-center flex-no-shrink text-black mr-6">
             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <g
